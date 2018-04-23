@@ -1,2 +1,2 @@
 # dotfiles
-Colletion of terminal config files
+Collection of terminal config files

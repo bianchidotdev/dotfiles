@@ -13,3 +13,8 @@ clone:
 git clone --recursive https://github.com/${repository_location} -b ${repository_branch} ${HOME}/.dotfiles
 bash ${HOME}/.dotfiles/install.sh
 ```
+
+##Credit
+Inspiration (and some code) taken from:
+michaeljsmalley ([makesymlinks.sh](https://github.com/michaeljsmalley/dotfiles/blob/master/makesymlinks.sh))
+gizmo385 ([update_dotfiles](https://github.com/gizmo385/dotfiles/blob/master/update_dotfiles))

@@ -10,7 +10,7 @@ bash install.sh
 ```
 clone:
 ```sh
-git clone --recursive https://github.com/${repository_location} -b ${repository_branch} ${HOME}/.dotfiles
+git clone --recursive https://github.com/michaeldbianchi/dotfiles -b master ~/.dotfiles
 bash ${HOME}/.dotfiles/install.sh
 ```
 

@@ -50,6 +50,25 @@ if has("clipboard")
 endif
 
 " Plugins
+
+" If no vim-plug, grab that first and install plugins
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Create function to compile youcompleteme after installation
+function! BuildYCM(info)
+  " info is a dictionary with 3 fields
+  " - name:   name of the plugin
+  " - status: 'installed', 'updated', or 'unchanged'
+  " - force:  set on PlugInstall! or PlugUpdate!
+  if a:info.status == 'installed' || a:info.force
+    !./install.py
+  endif
+endfunction
+
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
@@ -57,7 +76,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'ervandew/supertab'
-Plug 'valloric/youcompleteme'
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'fatih/vim-go'

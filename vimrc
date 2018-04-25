@@ -13,6 +13,7 @@ set foldlevel=2
 
 " Standard Config
 syntax on " Highlight the keywords based on filetype
+
 filetype indent on " Enable file type based indentation
 filetype plugin on " Enable file type based plugins
 
@@ -72,6 +73,7 @@ endfunction
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
+Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-fugitive'
@@ -83,6 +85,9 @@ Plug 'fatih/vim-go'
 
 
 call plug#end()
+
+" Solarized stuff
+colorscheme solarized
 
 " Syntastic Settings
 set statusline+=%#warningmsg#

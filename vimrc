@@ -87,7 +87,8 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Solarized stuff
-colorscheme solarized
+silent! colorscheme solarized
+" colorscheme solarized
 
 " Syntastic Settings
 set statusline+=%#warningmsg#

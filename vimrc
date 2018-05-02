@@ -82,7 +82,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'fatih/vim-go'
-
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 

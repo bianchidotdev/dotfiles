@@ -56,3 +56,5 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ${HOME}/.$file
 done
+
+vim +PlugInstall +qall

@@ -1,6 +1,8 @@
 brew
 
+bat (install from source using cargo)
 exa
+fd
 httpie
 jq
-
+asciinema

@@ -2,6 +2,7 @@ brew
 
 bat (install from source using cargo)
 exa
+xcv
 fd
 httpie
 jq

@@ -1,6 +1,6 @@
 brew
 
-bat (install from source using cargo)
+bat
 exa
 xcv
 fd

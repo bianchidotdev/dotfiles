@@ -17,3 +17,5 @@ unset file
 
 export CLICOLOR=1
 
+
+export PATH="$HOME/.cargo/bin:$PATH"

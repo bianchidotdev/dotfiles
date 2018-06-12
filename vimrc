@@ -83,6 +83,7 @@ Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'fatih/vim-go'
 Plug 'airblade/vim-gitgutter'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 

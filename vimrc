@@ -88,7 +88,7 @@ Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " Solarized stuff
-silent! colorscheme solarized
+"silent! colorscheme solarized
 " colorscheme solarized
 
 " Syntastic Settings
@@ -120,3 +120,6 @@ nnoremap <leader>a :cclose<CR>
 
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
+
+" Rust Settings
+let g:rustfmt_autosave = 1

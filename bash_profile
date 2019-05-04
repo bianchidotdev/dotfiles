@@ -15,6 +15,8 @@ done
 unset file
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
 export CLICOLOR=1
 
 

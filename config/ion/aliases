@@ -1,0 +1,11 @@
+alias la = 'ls -A'
+alias ll = 'ls -l'
+alias lla = 'ls -la'
+
+alias .2 = 'cd ../..'
+alias .3 = 'cd ../../..'
+alias .4 = 'cd ../../../..'
+
+alias exa = 'exa -l --git'
+
+alias venv = 'source venv/bin/activate'

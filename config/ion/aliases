@@ -8,4 +8,15 @@ alias .4 = 'cd ../../../..'
 
 alias exa = 'exa -l --git'
 
+# python
 alias venv = 'source venv/bin/activate'
+
+# ruby
+alias rspec = 'bundle exec rspec'
+alias rs = 'rails s'
+alias rc = 'rails c'
+alias b = 'bundle install'
+
+# opploans
+alias awscreds = 'python3 ~/.aws/onelogin/onelogin-aws-assume-role.py'
+

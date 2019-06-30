@@ -9,5 +9,7 @@ set fish_user_paths /usr/local/bin $fish_user_paths
 set fish_user_paths "/usr/local/sbin" $fish_user_paths
 set fish_user_paths "$HOME/.cargo/bin" $fish_user_paths
 set fish_user_paths "$HOME/.rbenv/shims" $fish_user_paths
+set fish_user_paths "$HOME/.google-cloud-sdk/bin" $fish_user_pathsA
 
 set HOST 'localhost'
+

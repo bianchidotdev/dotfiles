@@ -13,3 +13,4 @@ set fish_user_paths "$HOME/.google-cloud-sdk/bin" $fish_user_pathsA
 
 set HOST 'localhost'
 
+set -g fish_user_paths "/usr/local/opt/terraform@0.11/bin" $fish_user_paths

@@ -12,7 +12,7 @@ repository_branch="master"
 
 dir=${HOME}/.dotfiles                    # dotfiles directory
 bckdir=${HOME}/.bck_dotfiles             # old dotfiles backup directory
-files="bashrc bash_profile bash_aliases bash_prompt vimrc vim config"    # list of files/folders to symlink in homedir
+files="bashrc bash_profile bash_aliases bash_prompt vimrc vim config psqlrc"    # list of files/folders to symlink in homedir
 
 ##########
 

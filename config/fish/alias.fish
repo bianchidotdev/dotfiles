@@ -18,10 +18,12 @@ alias spacehogs 'open \'https://youtu.be/EmI77ZBeJrQi\''
 alias venv 'source venv/bin/activate'
 
 # Ruby
-alias rspec 'bundle exec rspec spec'
+alias rspec 'bundle exec rspec'
 alias rs 'rails s'
 alias rc 'rails c'
 alias b 'bundle install'
+alias cap 'bundle exec cap'
 
 # OppLoans
 alias awscreds 'python3 ~/.aws/onelogin/onelogin-aws-assume-role.py'
+alias reporting 'psql -h reporting.ckpglb17yttu.us-east-1.rds.amazonaws.com -U mbianchi reporting'

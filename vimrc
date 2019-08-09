@@ -59,16 +59,16 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-" Create function to compile youcompleteme after installation
-function! BuildYCM(info)
-  " info is a dictionary with 3 fields
-  " - name:   name of the plugin
-  " - status: 'installed', 'updated', or 'unchanged'
-  " - force:  set on PlugInstall! or PlugUpdate!
-  if a:info.status == 'installed' || a:info.force
-    !./install.py
-  endif
-endfunction
+"" Create function to compile youcompleteme after installation
+"function! BuildYCM(info)
+  "" info is a dictionary with 3 fields
+  "" - name:   name of the plugin
+  "" - status: 'installed', 'updated', or 'unchanged'
+  "" - force:  set on PlugInstall! or PlugUpdate!
+  "if a:info.status == 'installed' || a:info.force
+    "!./install.py
+  "endif
+"endfunction
 
 call plug#begin('~/.vim/plugged')
 
@@ -78,7 +78,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'ervandew/supertab'
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+"Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'fatih/vim-go'

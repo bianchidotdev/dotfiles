@@ -9,6 +9,7 @@ export PATH=$HOME/.rbenv/shims:$PATH
 export PATH=$HOME/.google-cloud-sdk/bin:$PATH
 
 source ~/.config/antigen.zsh
+source ~/.zsh_aliases
 
 
 # Load the oh-my-zsh's library.

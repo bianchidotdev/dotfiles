@@ -1,13 +1,22 @@
-alias python='python3'
-alias pip='pip3'
 alias venv='source venv/bin/activate'
-alias jupytergo="jupyter notebook --ip=* --no-browser"
 
 alias ...='../..'
 alias ....='../../..'
 alias .....='../../../..'
-alias pysh='pipenv shell'
-alias py='pipenv run python'
+alias cd..='cd ..'
 
-alias mux='tmuxinator'
-alias dockerlab='docker run -ti --rm -p 8888:8888 -v "$PWD":/home/jovyan/work jupyter/minimal-notebook start.sh jupyter lab'
+alias g=git
+alias v=vim
+alias vi=vim
+
+alias exa='exa -al --git'
+
+alias rspec='bundle exec rspec'
+alias rs='rails s'
+alias rc='rails c'
+alias b='bundle'
+alias cap='bundle exec cap'
+
+alias awscreds='python3 ~/.aws/onelogin/onelogin-aws-assume-role.py'
+alias reporting='psql -h reporting.ckpglb17yttu.us-east-1.rds.amazonaws.com -U mbianchi reporting'
+

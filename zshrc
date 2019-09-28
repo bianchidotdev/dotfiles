@@ -10,6 +10,7 @@ export PATH=$HOME/.google-cloud-sdk/bin:$PATH
 
 source ~/.config/antigen.zsh
 source ~/.zsh_aliases
+source ~/.zsh_functions
 
 
 # Load the oh-my-zsh's library.
@@ -26,7 +27,7 @@ antigen bundle compleat
 #antigen bundle git-flow
 #antigen bundle mix
 #antigen bundle npm
-#antigen bundle osx
+antigen bundle osx
 #antigen bundle rails
 antigen bundle rbenv
 #antigen bundle terraform
@@ -40,3 +41,9 @@ antigen apply
 
 # Load the theme
 eval "$(starship init zsh)"
+
+# Custom
+#bindkey "^[^[[D" backward-word
+#bindkey "^[^[[C" forward-word
+#eval $(op signin my)
+

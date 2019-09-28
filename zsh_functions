@@ -1,0 +1,4 @@
+# ssm() {
+	#aws ssm start-session --target $(aws ec2 describe-instances --filters "Name=tag:Name,Values=$1" --region us-east-1 --query "Reservations[*].Instances[*].[InstanceId]" | jq '.[] | .[] | .[]' | tr -d \" | head -n 1) --region us-east-1
+#}
+

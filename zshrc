@@ -11,6 +11,7 @@ export PATH=$HOME/.google-cloud-sdk/bin:$PATH
 source ~/.config/antigen.zsh
 source ~/.zsh_aliases
 source ~/.zsh_functions
+source ~/.zsh_vars
 
 
 # Load the oh-my-zsh's library.
@@ -47,3 +48,12 @@ eval "$(starship init zsh)"
 #bindkey "^[^[[C" forward-word
 #eval $(op signin my)
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/michaelbianchi/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/michaelbianchi/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/michaelbianchi/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/michaelbianchi/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+source $(brew --prefix asdf)/asdf.sh
+source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash

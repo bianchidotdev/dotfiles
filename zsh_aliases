@@ -15,6 +15,7 @@ alias rspec='bundle exec rspec'
 alias rs='rails s'
 alias rc='rails c'
 alias b='bundle'
+alias rake='bundle exec rake'
 alias cucumber='bundle exec cucumber'
 alias cap='bundle exec cap'
 alias srb='bundle exec srb'
@@ -29,7 +30,12 @@ alias dc='docker-compose'
 
 alias k='kubectl'
 
+alias slt="sumolivetail"
+alias shivalogs='slt "_sourceCategory=prod/shiva/logs"'
+
 # Environment aliases
 alias shivatst='CLC_API_ENV=configured CL_API_CLIENT_ID=3MVG9QBLg8QGkFeotdFjjKpX5vexApDaRwmq9XXwyqvpss0tVe20005moLAJQl_wgSHh06u5sAyhA0VpLuTMn CL_API_CLIENT_SECRET=6496FB24FF08A86C2F4AE206CCBCF98F49A8A4C2BECF658FE5A3EDD1670AD1BD CL_API_PASSWORD=d2ft98PeR6zZ CL_API_TOKEN_HOST=test.salesforce.com CL_API_USERNAME=shiva@opploans.com.Shivatst'
 alias shiva1111='CLC_API_ENV=configured CL_API_CLIENT_ID=3MVG9zZht._ZaMunIw02Zmy.qMxLufPcYh.n043okr.vaOsRSL7X8rZY9KoEvkSxCw1maZBITcINcOslEB_WG CL_API_CLIENT_SECRET=1765788DC6C70BE761A50BE4AA4797A1C7AD0C8085F89C9DCAB8EF4699EC5DDE CL_API_PASSWORD=shivatest123 CL_API_TOKEN_HOST=test.salesforce.com CL_API_USERNAME=shivauser@opploans.com.shivatst'
 
+alias glr='gitlab-runner'
+alias gll='gitlab-ci-lint'

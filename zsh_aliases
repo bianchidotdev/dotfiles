@@ -39,3 +39,7 @@ alias shiva1111='CLC_API_ENV=configured CL_API_CLIENT_ID=3MVG9zZht._ZaMunIw02Zmy
 
 alias glr='gitlab-runner'
 alias gll='gitlab-ci-lint'
+
+alias google-chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias chrome='google-chrome'
+

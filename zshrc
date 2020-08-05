@@ -7,6 +7,7 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.rbenv/shims:$PATH
 export PATH=$HOME/.google-cloud-sdk/bin:$PATH
+export PATH=$PATH:$HOME/go/bin
 
 source ~/.config/antigen.zsh
 source ~/.zsh_aliases
@@ -46,7 +47,6 @@ eval "$(starship init zsh)"
 # Custom
 #bindkey "^[^[[D" backward-word
 #bindkey "^[^[[C" forward-word
-#eval $(op signin my)
 
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -56,8 +56,13 @@ if [ -f '/Users/michaelbianchi/Downloads/google-cloud-sdk/path.zsh.inc' ]; then 
 if [ -f '/Users/michaelbianchi/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/michaelbianchi/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 source $(brew --prefix asdf)/asdf.sh
-source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+#source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 
 export DOCKER_BUILDKIT=1
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm

@@ -45,13 +45,13 @@ function tfdo {
     echo "============================================================"
   fi
 
-  if [ "init" == "$1" ]; then
+  if [ "init" '==' "$1" ]; then
     #rm -rf .terraform
     tf_do_var_file="backend.tfvars"
     tf_do_cmd_switch="backend-config"
   fi
   local base_var_file_cmd="-$tf_do_cmd_switch=../$tf_do_var_file"
-  if [ "apply" == "$1" ] && [ "-aa" == "$2" ]; then
+  if [ "apply" '==' "$1" ] && [ "-aa" '==' "$2" ]; then
     local base_var_file_cmd="-auto-approve $base_var_file_cmd"
   fi
   local nested_var_file_cmd=""

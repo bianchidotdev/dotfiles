@@ -1,11 +1,14 @@
 prompt_order = [
   "character",
   "username",
+  "kubernetes",
   "directory",
   "git_branch",
   "git_status",
+  "docker_context",
   "package",
   "nodejs",
+  "elixir",
   "ruby",
   "rust",
   "python",
@@ -41,6 +44,10 @@ truncate_to_repo = false
 #added = "➕"
 #renamed = "👅"
 #deleted = "🗑"
+
+[kubernetes]
+disabled = false
+symbol = ""
 
 [line_break]
 disabled = true

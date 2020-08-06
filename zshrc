@@ -14,6 +14,13 @@ source ~/.zsh_aliases
 source ~/.zsh_functions
 source ~/.zsh_vars
 
+if [[ -r ~/.sumo_creds ]]; then
+	source ~/.sumo_creds
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -66,3 +73,6 @@ export DOCKER_BUILDKIT=1
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+# Start gpg-agent
+gpgconf --launch gpg-agent
+export PATH="$HOME/.harold/bin:$PATH"

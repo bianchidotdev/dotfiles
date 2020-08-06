@@ -15,6 +15,7 @@ alias rspec='bundle exec rspec'
 alias rs='rails s'
 alias rc='rails c'
 alias b='bundle'
+alias be='bundle exec'
 alias rake='bundle exec rake'
 alias cucumber='bundle exec cucumber'
 alias cap='bundle exec cap'
@@ -30,10 +31,17 @@ alias k='kubectl'
 
 alias slt="sumolivetail"
 alias shivalogs='slt "_sourceCategory=prod/shiva/logs"'
+alias widlarlogs='slt "_sourceCategory=prod/widlar/logs"'
 
 # Environment aliases
 alias shivatst='CLC_API_ENV=configured CL_API_CLIENT_ID=3MVG9QBLg8QGkFeotdFjjKpX5vexApDaRwmq9XXwyqvpss0tVe20005moLAJQl_wgSHh06u5sAyhA0VpLuTMn CL_API_CLIENT_SECRET=6496FB24FF08A86C2F4AE206CCBCF98F49A8A4C2BECF658FE5A3EDD1670AD1BD CL_API_PASSWORD=d2ft98PeR6zZ CL_API_TOKEN_HOST=test.salesforce.com CL_API_USERNAME=shiva@opploans.com.Shivatst'
 alias shiva1111='CLC_API_ENV=configured CL_API_CLIENT_ID=3MVG9zZht._ZaMunIw02Zmy.qMxLufPcYh.n043okr.vaOsRSL7X8rZY9KoEvkSxCw1maZBITcINcOslEB_WG CL_API_CLIENT_SECRET=1765788DC6C70BE761A50BE4AA4797A1C7AD0C8085F89C9DCAB8EF4699EC5DDE CL_API_PASSWORD=shivatest123 CL_API_TOKEN_HOST=test.salesforce.com CL_API_USERNAME=shivauser@opploans.com.shivatst'
+alias acquisition="CLC_API_ENV=configured CL_API_CLIENT_ID=3MVG9XmM8CUVepGaWq.XTuUtlmybCnSI_oNRhKwRGrofnUDlPOHAiYVgDm_GfW.wjPU2CU13shwArGgl5zf9U CL_API_CLIENT_SECRET=811C0F8D2613370358B525E1B891F8C72FD7844E8DAF3260A986D0A5487517B2 CL_API_PASSWORD='5*Z3WNzu&5@K' CL_API_TOKEN_HOST=test.salesforce.com CL_API_USERNAME=acquisitionsapi@opploans.com.fedtest1"
+alias acqprod="CLC_API_ENV=configured CL_API_CLIENT_ID=3MVG9Km_cBLhsuPz8QQHc9Cth87Bg5CVZ5Z95cm81Jaag2OHfJjz9SejqOUZMwr5Z5BhJ4o5qTIBjWCb4AmqX CL_API_CLIENT_SECRET=934191260469912004 CL_API_PASSWORD=HO5dl9x9F193 CL_API_TOKEN_HOST=login.salesforce.com CL_API_USERNAME=acquisitionsapi@opploans.com"
+alias widlar='CLC_API_ENV=configured CL_API_CLIENT_ID=3MVG98RqVesxRgQ7brOAvNrvHm7iocozwLhdmbcqCeEED5XOFCBc2smZAkPaTDJ0tIURge4w5Z4bvbVRD_fWd CL_API_CLIENT_SECRET=FBF0FAA8F2FA0A25F68CB98310B730DCD888D99E6181DB207E394AB7FB06C765 CL_API_PASSWORD=sftester1 CL_API_TOKEN_HOST=test.salesforce.com CL_API_USERNAME=widlar@opploans.com.fedtest1'
+alias widlarprod='CLC_API_ENV=configured CL_API_CLIENT_ID=3MVG9Km_cBLhsuPz8QQHc9Cth84G5EUQz3CwmuRsOtCrRC_b9Kes6yoq_HQNqUZZ8rf1A3cBUacXPW5Im_Lv8 CL_API_CLIENT_SECRET=4E98268288434FCA4E1D67DCB95E21CF31DF04900AC36459817DC6B5D44B4404 CL_API_PASSWORD=Widlertester1 CL_API_TOKEN_HOST=login.salesforce.com CL_API_USERNAME=widlar@opploans.com'
+alias widlarqe5='CLC_API_ENV=configured CL_API_CLIENT_ID=3MVG98dostKihXN5J7EESfg9JeKHZjgKTVRHqrUYpOG1Ei5trD3.IaolH.AtLLEOd12nBd6FoXjsMu3qn7kDZ CL_API_CLIENT_SECRET=CA811D975D30A9C9F0E3D07D65850AAF17BE2DBE12FC9A34A199B27E3783088E CL_API_PASSWORD=qatester1 CL_API_TOKEN_HOST=test.salesforce.com CL_API_USERNAME=widlar@opploans.com.qetest5'
+
 
 alias glr='gitlab-runner'
 alias gll='gitlab-ci-lint'
@@ -46,3 +54,6 @@ alias kbfs='cd /Volumes/Keybase'
 alias kbpr='cd /Volumes/Keybase/private/michaeldbianchi'
 alias kbpu='cd /Volumes/Keybase/public/michaeldbianchi'
 
+alias timestamp='date +"%Y%m%d%H%M"'
+
+alias psqlreporting='psql -h reporting.ckpglb17yttu.us-east-1.rds.amazonaws.com -U mbianchi reporting'

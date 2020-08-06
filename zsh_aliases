@@ -41,6 +41,7 @@ alias gll='gitlab-ci-lint'
 alias google-chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias chrome='google-chrome'
 
+alias kb='keybase'
 alias kbfs='cd /Volumes/Keybase'
 alias kbpr='cd /Volumes/Keybase/private/michaeldbianchi'
 alias kbpu='cd /Volumes/Keybase/public/michaeldbianchi'

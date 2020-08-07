@@ -57,3 +57,6 @@ alias kbpu='cd /Volumes/Keybase/public/michaeldbianchi'
 alias timestamp='date +"%Y%m%d%H%M"'
 
 alias psqlreporting='psql -h reporting.ckpglb17yttu.us-east-1.rds.amazonaws.com -U mbianchi reporting'
+
+alias ul='ultralist'
+
